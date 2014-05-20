@@ -1,13 +1,13 @@
 package br.com.k21;
 
-public class Calculadora {
+public class CalculadoraComissao {
 
 	private static final double percentualMenorOuIgualDezMil = 0.05;
 
-	public Double calculaComissao(Double valorDaVenda) {
+	public Double calcula(Double valorDaVenda) {
 		double result = 0.0;
 		
-		if (valorDaVenda <= 10000.0) {		
+		if (valorDaVenda <= 50000.0) {		
 			result = valorDaVenda * percentualMenorOuIgualDezMil;
 			result = trataArredondamentoParaBaixo(result);
 		} else {
